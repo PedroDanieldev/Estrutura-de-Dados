@@ -4,12 +4,14 @@ using namespace std;
 
 int main()
 {
-    float nota1,nota2,media;
-    cout << "Digite sua primeira nota;" << endl;
-    cin>>nota1;
-    cout<<"digite sua segunda nota:"<<endl;
-    cin>>nota2;
-    media= (nota1*0.7)+(nota2*0.3);
-    cout<<"sua media eh "<<media<<endl;
+    int escolhas;
+    int fat=1;
+    cout<<"escolha o numero para descobrir o fatorial :"<<endl;
+    cin>>escolhas;
+    for(int i=1;i<=escolhas;i++){
+        fat=fat*i;
+    }
+    cout<<"O fatorial eh :"<< fat<<endl;
+
     return 0;
 }
